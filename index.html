@@ -4,20 +4,99 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>rokimochi</title>
+
   <style>
-    body { font-family: system-ui, sans-serif; margin: 40px; max-width: 900px; }
-    h1 { margin: 0 0 8px; }
-    p { line-height: 1.6; }
-    a { text-decoration: none; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 48px;
+      max-width: 1000px;
+      line-height: 1.6;
+      color: #111;
+    }
+
+    h1, h2 {
+      font-weight: 500;
+      margin-top: 0;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    .works {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .work {
+      border: 1px solid #ddd;
+      padding: 16px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+
+    a:hover {
+      border-color: #000;
+    }
   </style>
 </head>
+
 <body>
-  <h1>rokimochi</h1>
-  <p>
-    Animation & Game Design student based in Germany. This is my portfolio.
-  </p>
-  <p>
-    Contact: <a href="mailto:yourmail@example.com">yourmail@example.com</a>
-  </p>
+
+  <section>
+    <h1>rokimochi</h1>
+    <p>
+      Animation & Game Design student based in Germany.
+      Inspired by anime, manga, and Japanese aesthetics.
+    </p>
+  </section>
+
+  <section>
+    <h2>Selected Works</h2>
+
+    <div class="works">
+      <div class="work">
+        <strong>Japan Studies</strong><br>
+        Animation & illustration<br>
+        <em>Study abroad project</em>
+      </div>
+
+      <div class="work">
+        <strong>Tattoo Studio Work</strong><br>
+        Illustration<br>
+        <em>Personal & professional practice</em>
+      </div>
+
+      <div class="work">
+        <strong>Concept Art — China</strong><br>
+        Architectural concept drawings<br>
+        <em>Collaborative project</em>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      Ever since I was a young girl, I’ve been inspired by anime, manga, and Japanese aesthetics.
+      During my time in Japan, I deeply immersed myself in the culture and visual language that
+      shaped my artistic approach. My goal is to create games that combine gameplay with animated
+      sequences.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:rokishimochi@gmail.com">rokishimochi@gmail.com</a>
+    </p>
+  </section>
+
 </body>
 </html>
+
