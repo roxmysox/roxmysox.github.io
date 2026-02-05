@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>rokimochi</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 40px; max-width: 900px; }
+    h1 { margin: 0 0 8px; }
+    p { line-height: 1.6; }
+    a { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>rokimochi</h1>
+  <p>
+    Animation & Game Design student based in Germany. This is my portfolio.
+  </p>
+  <p>
+    Contact: <a href="mailto:yourmail@example.com">yourmail@example.com</a>
+  </p>
+</body>
+</html>
