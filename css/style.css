@@ -27,7 +27,7 @@ body{
   background-image: url("../img/contact-bg.jpg");
   background-size: cover;
   background-position: center;
-  filter: grayscale(100%);
+  filter: grayscale(90%);
   transform: scale(1.02);
   opacity: 0.35;
 }
