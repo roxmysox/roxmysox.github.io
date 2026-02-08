@@ -1,91 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rokimochi</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body id="top">
 
-  <header>
-    <h1>Rokimochi</h1>
-    <p>Animation · Illustration · Game Design</p>
+  <!-- Global background (same vibe as Contact) -->
+  <div class="page-bg" aria-hidden="true"></div>
+  <div class="page-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <div class="brand">
+        <div class="brand-small">Rokimochi</div>
+        <p class="brand-sub">Animation · Illustration · Game Design</p>
+      </div>
+
+      <nav class="nav">
+        <a href="#statement">Statement</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+      </nav>
+
+    </div>
   </header>
 
-  <main>
-
-    <section id="intro">
-      <p>
-        I explore beauty in what is often perceived as unsettling.
-        My work focuses on female mythological creatures, the body,
-        and the space between fascination and discomfort.
-      </p>
-    </section>
-
-    <section id="work">
-      <h2>Selected Work</h2>
-
-      <div class="project">
-        <p>Japan Studies — Animation & Illustration</p>
+  <main class="container">
+    <section id="statement" class="panel">
+      <div class="section-header">
+        <div class="section-title">Roxanne Salge</div>
+        <div class="section-subtitle">Located in Kassel, Germany</div>
       </div>
 
-      <div class="project">
-        <p>Mythical Creatures — Illustration Series</p>
+      <div class="text">
+        I explore beauty in what is often perceived as unsettling. My work focuses on female mythological creatures,
+        the body, and transformation—where fascination meets discomfort.
+        I’m drawn to folklore, symbolism, and detailed ornamentation, and I want to reclaim “the grotesque”
+        as something powerful, tender, and visually compelling.
       </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        Animation and Game Design student based in Germany.
-        Deeply influenced by Japanese visual culture and mythology.
-      </p>
-    </section>
+    <div class="divider" aria-hidden="true"></div>
 
-   <section id="contact" class="contact">
-  <div class="contact-bg"></div>
-  <div class="contact-overlay"></div>
+    <!-- About + contact -->
+    <div>
+      <div class="about-left">
+        <p class="text">
+          I’m Roxanne Salge, working under the name <span class="accent">Rokimochi</span>.
+          I’ve been influenced by Japanese visual culture since my early teens, when friends in my manga club
+          started calling me “Roki.”
+        </p>
 
-  <div class="contact-inner">
-    <h2 class="contact-title">Contact</h2>
+        <p class="text">
+          The name later evolved into <i>Rokimochi</i>. “Kimochi” can describe feeling, sensation, or emotional state —
+          something deeply physical and intuitive. This idea strongly shapes my work:
+          I’m interested in how images can evoke attraction and discomfort at the same time,
+          how the body reacts before the mind explains.
+        </p>
 
-    <div class="contact-grid">
-      <div class="contact-left">
-        <div class="contact-brand">Rokimochi</div>
-        <div class="contact-name">Roxanne Salge</div>
-        <div class="contact-loc">Located in Kassel, Germany</div>
+        <p class="text">
+          Studying in Japan was a long-term goal and a formative experience that continues to inform my approach
+          across illustration, animation, and game creation.
+        </p>
 
-        <div class="contact-links">
-          <p class="contact-label">get in touch with me:</p>
+        <div class="divider"></div>
 
-          <p>
-            <a class="accent" href="mailto:rokishimochi@gmail.com">rokishimochi@gmail.com</a>
-          </p>
+        <p class="label">get in touch with me:</p>
 
-          <p>
-            instagram:
-            <a class="accent" href="https://instagram.com/roxkenway" target="_blank" rel="noopener">/roxkenway</a>
-          </p>
-
-          <p>
-            itch.io:
-            <a class="accent" href="https://roxmysox.itch.io/" target="_blank" rel="noopener">roxmysox.itch.io</a>
-          </p>
-        </div>
+        <p class="links">
+          <a class="accent" href="mailto:rokishimochi@gmail.com">rokishimochi@gmail.com</a><br>
+          instagram:
+          <a class="accent" href="https://instagram.com/roxkenway" target="_blank" rel="noopener">/roxkenway</a><br>
+          itch.io:
+          <a class="accent" href="https://roxmysox.itch.io/" target="_blank" rel="noopener">roxmysox.itch.io</a>
+        </p>
       </div>
 
-      <div class="contact-right">
+      <div class="about-right">
         <div class="avatar-wrap">
           <img class="avatar" src="img/avatar.png" alt="Rokimochi avatar">
         </div>
       </div>
     </div>
-  </div>
-</section>
 
+    <!-- Selected work -->
+    <section id="work" class="panel">
+      <h2 class="section-title">Selected Work</h2>
+
+      <div class="work-list">
+        <div class="work-item">
+          <div class="work-title">Japan Studies</div>
+          <div class="work-meta">Animation & Illustration — exchange studies</div>
+        </div>
+
+        <div class="work-item">
+          <div class="work-title">Mythical Creatures</div>
+          <div class="work-meta">Illustration series — folklore, body, transformation</div>
+        </div>
+
+        <div class="work-item">
+          <div class="work-title">Game Creation</div>
+          <div class="work-meta">Prototypes / devlog — atmosphere and interactive storytelling</div>
+        </div>
+      </div>
+    </section>
 
   </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Rokimochi
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
