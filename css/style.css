@@ -2,7 +2,7 @@
   --bone: #F2F0EB;
   --dark: #121212;
   --soft: #B9B9B9;
-  --green: #0F2C23;
+  --green: 15 44 35;
   --acid: #C7E84A;
 }
 
@@ -20,14 +20,16 @@ body{
 .page-bg{
   position: fixed;
   inset: 0;
-  background-image: url("../img/contact-bg.jpg");
+  background-image: 
+    linear-gradient(rgb(var(--green) / 0.18), rgb(var(--green) / 0.18)),
+    url("../img/contact-bg.jpg");
   background-size: cover;
   background-position: center;
-  filter: grayscale(85%);
   transform: scale(1.03);
   opacity: 0.28;
   z-index: -2;
 }
+
 
 .page-overlay{
   background:
@@ -115,7 +117,7 @@ a.accent:hover{
 }
 
 /* Blocksatz (vollständig ausgerichtete Absätze) */
-p, .text {
+.text {
   text-align: justify;
   text-justify: inter-word;
   hyphens: auto;
